@@ -1,0 +1,14 @@
+# mongo-pvc.yml (Fixed)
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: mongo-volume-claim
+  namespace: three-tier
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 1Gi
+  # Optionally omit StorageClassName if using default or manual PV binding
+  # storageClassName: ""  
