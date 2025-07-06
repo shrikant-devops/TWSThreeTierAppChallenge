@@ -23,7 +23,7 @@ spec:
     spec:
       containers:
       - name: api
-        image: shrikantdevops/backend:latest
+        image: hrikantdevops/tws-backend:latest
         imagePullPolicy: Always
         env:
           - name: MONGO_CONN_STR
